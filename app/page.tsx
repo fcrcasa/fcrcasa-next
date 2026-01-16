@@ -42,7 +42,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Project 1 */}
-            <div className="group cursor-pointer">
+            <Link href="/i-nostri-lavori/villa-treviglio" className="group block">
               <div className="relative h-64 w-full overflow-hidden rounded-[2rem] mb-6">
                 <Image
                   src="/images/img_3489-m6LbkVBN55Ur9lzx.jpg"
@@ -51,13 +51,13 @@ export default function Home() {
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
               </div>
-              <Link href="/i-nostri-lavori" className="inline-block border-b border-gray-900 pb-1 text-2xl text-gray-900 group-hover:opacity-70 transition-opacity font-serif">
+              <span className="inline-block border-b border-gray-900 pb-1 text-2xl text-gray-900 group-hover:opacity-70 transition-opacity font-serif">
                 Ristrutturazione totale di una <br /> villa a Treviglio (BG)
-              </Link>
-            </div>
+              </span>
+            </Link>
 
             {/* Project 2 */}
-            <div className="group cursor-pointer">
+            <Link href="/i-nostri-lavori/ville-trescore" className="group block">
               <div className="relative h-64 w-full overflow-hidden rounded-[2rem] mb-6">
                 <Image
                   src="/images/img_1650-Aq2Jn88M63CpabE5.jpg"
@@ -66,13 +66,13 @@ export default function Home() {
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
               </div>
-              <Link href="/i-nostri-lavori" className="inline-block border-b border-gray-900 pb-1 text-2xl text-gray-900 group-hover:opacity-70 transition-opacity font-serif">
+              <span className="inline-block border-b border-gray-900 pb-1 text-2xl text-gray-900 group-hover:opacity-70 transition-opacity font-serif">
                 Costruzione ville a Trescore <br /> Balneario (BG)
-              </Link>
-            </div>
+              </span>
+            </Link>
 
             {/* Project 3 */}
-            <div className="group cursor-pointer">
+            <Link href="/i-nostri-lavori/tetto-martinengo" className="group block">
               <div className="relative h-64 w-full overflow-hidden rounded-[2rem] mb-6">
                 <Image
                   src="/images/img_0955-mxBXQyPqlDCZGkxP.jpg"
@@ -81,13 +81,13 @@ export default function Home() {
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
               </div>
-              <Link href="/i-nostri-lavori" className="inline-block border-b border-gray-900 pb-1 text-2xl text-gray-900 group-hover:opacity-70 transition-opacity font-serif">
+              <span className="inline-block border-b border-gray-900 pb-1 text-2xl text-gray-900 group-hover:opacity-70 transition-opacity font-serif">
                 Ristrutturazione tetto a <br /> Martinengo (BG)
-              </Link>
-            </div>
+              </span>
+            </Link>
 
             {/* Project 4 */}
-            <div className="group cursor-pointer">
+            <Link href="/i-nostri-lavori/corte-covo" className="group block">
               <div className="relative h-64 w-full overflow-hidden rounded-[2rem] mb-6">
                 <Image
                   src="/images/img_3488-YrDJ2ORnynHzMeL9.jpg" // Placeholder for Covo/Fourth project
@@ -96,13 +96,13 @@ export default function Home() {
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
               </div>
-              <Link href="/i-nostri-lavori" className="inline-block border-b border-gray-900 pb-1 text-2xl text-gray-900 group-hover:opacity-70 transition-opacity font-serif">
+              <span className="inline-block border-b border-gray-900 pb-1 text-2xl text-gray-900 group-hover:opacity-70 transition-opacity font-serif">
                 Ristrutturazione corte a Covo <br /> (BG)
-              </Link>
-            </div>
+              </span>
+            </Link>
 
             {/* Project 5 - Bagni */}
-            <div className="group cursor-pointer">
+            <Link href="/i-nostri-lavori/ristrutturazione-bagni" className="group block">
               <div className="relative h-64 w-full overflow-hidden rounded-[2rem] mb-6">
                 <Image
                   src="/images/img_1649-mP4M96VP84crqlO7.jpg" // Guessing this is bathroom
@@ -111,13 +111,13 @@ export default function Home() {
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
               </div>
-              <Link href="/i-nostri-lavori" className="inline-block border-b border-gray-900 pb-1 text-2xl text-gray-900 group-hover:opacity-70 transition-opacity font-serif">
+              <span className="inline-block border-b border-gray-900 pb-1 text-2xl text-gray-900 group-hover:opacity-70 transition-opacity font-serif">
                 Ristrutturazione bagni
-              </Link>
-            </div>
+              </span>
+            </Link>
 
             {/* Project 6 - Farmacia */}
-            <div className="group cursor-pointer">
+            <Link href="/i-nostri-lavori/farmacia-maridati" className="group block">
               <div className="relative h-64 w-full overflow-hidden rounded-[2rem] mb-6">
                 <Image
                   src="/images/205452f9-6f23-425f-81b8-c878608d620b-AVLa9ORoOPcNLZXn.jpg" // Guessing this is pharmacy
@@ -126,10 +126,10 @@ export default function Home() {
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
               </div>
-              <Link href="/i-nostri-lavori" className="inline-block border-b border-gray-900 pb-1 text-2xl text-gray-900 group-hover:opacity-70 transition-opacity font-serif">
+              <span className="inline-block border-b border-gray-900 pb-1 text-2xl text-gray-900 group-hover:opacity-70 transition-opacity font-serif">
                 Ristrutturazione totale farmacia <br /> Maridati, Casirate D'Adda (BG)
-              </Link>
-            </div>
+              </span>
+            </Link>
           </div>
         </div>
       </section>

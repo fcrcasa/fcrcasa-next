@@ -48,7 +48,7 @@ export default function NostriLavori() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
                     {projects.map((project, index) => (
-                        <div key={index} className="group cursor-pointer">
+                        <Link key={index} href={project.link} className="group block">
                             <div className="relative h-64 w-full overflow-hidden rounded-[2rem] mb-6">
                                 <Image
                                     src={project.image}
@@ -57,10 +57,10 @@ export default function NostriLavori() {
                                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                                 />
                             </div>
-                            <Link href={project.link} className="inline-block border-b border-gray-900 pb-1 text-2xl text-gray-900 group-hover:opacity-70 transition-opacity font-serif leading-tight">
+                            <span className="inline-block border-b border-gray-900 pb-1 text-2xl text-gray-900 group-hover:opacity-70 transition-opacity font-serif leading-tight">
                                 {project.title}
-                            </Link>
-                        </div>
+                            </span>
+                        </Link>
                     ))}
                 </div>
             </div>
