@@ -57,13 +57,26 @@ export default function Contatti() {
                 form.reset();
                 setShowAltroService(false);
 
-                // GTM Conversion Event
+                // GTM Conversion Event with Advanced Segmentation
                 if (typeof window !== "undefined") {
+                    const budget = formData.get("budget")?.toString() || "";
+                    const service = formData.get("servizio")?.toString() || "";
+                    const location = formData.get("luogo")?.toString() || "";
+
+                    // Logic: High ticket if budget is over 50k or service is "Costruzione Nuova Casa"
+                    const isHighTicket =
+                        budget.includes("50.000") ||
+                        budget.includes("100.000") ||
+                        budget.includes("Oltre 200.000") ||
+                        service === "Costruzione Nuova Casa";
+
                     (window as any).dataLayer = (window as any).dataLayer || [];
                     (window as any).dataLayer.push({
-                        event: "form_submission_success",
-                        form_id: "contact_form",
-                        form_name: "Richiesta Preventivo"
+                        event: "form_submission_leads",
+                        lead_type: isHighTicket ? "high_ticket" : "standard",
+                        service_type: service,
+                        location: location,
+                        form_id: "contact_form"
                     });
                 }
             } else {
