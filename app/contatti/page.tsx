@@ -56,6 +56,16 @@ export default function Contatti() {
                 setFormStatus("success");
                 form.reset();
                 setShowAltroService(false);
+
+                // GTM Conversion Event
+                if (typeof window !== "undefined") {
+                    (window as any).dataLayer = (window as any).dataLayer || [];
+                    (window as any).dataLayer.push({
+                        event: "form_submission_success",
+                        form_id: "contact_form",
+                        form_name: "Richiesta Preventivo"
+                    });
+                }
             } else {
                 setFormStatus("error");
                 const data = await response.json().catch(() => ({}));
