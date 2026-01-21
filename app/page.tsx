@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import { ArrowRight, Hammer, Home as HomeIcon, PenTool } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import GoogleReviews from "@/components/GoogleReviews";
 
 export default function Home() {
   return (
@@ -199,39 +200,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="py-24 bg-white border-t border-gray-100">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-sm font-bold tracking-[0.2em] text-gray-400 uppercase">Testimonianze</h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-6xl mx-auto">
-            {/* Testimonial 1 */}
-            <div className="flex flex-col gap-6">
-              <p className="font-serif italic text-2xl text-gray-800 leading-relaxed">
-                "Abbiamo affidato a Fontana Costruzioni la ristrutturazione completa della nostra villa storica.
-                Sin dal primo incontro abbiamo percepito serietà, competenza e una rara sensibilità estetica.
-                Il risultato ha superato ogni aspettativa: precisione assoluta, rispetto dei tempi e un'eleganza senza tempo."
-              </p>
-              <div className="text-gray-900">
-                <span className="font-bold text-lg">– Dott. Alessandro Moretti,</span> <span className="text-lg">Bergamo</span>
-              </div>
-            </div>
-
-            {/* Testimonial 2 */}
-            <div className="flex flex-col gap-6">
-              <p className="font-serif italic text-2xl text-gray-800 leading-relaxed">
-                "Costruire una casa da zero può essere un percorso complesso, ma con Fontana Costruzioni ci siamo sempre sentiti guidati, ascoltati e protetti.
-                Ogni dettaglio è stato curato con maestria. È raro trovare professionisti capaci di coniugare visione architettonica e rigore esecutivo."
-              </p>
-              <div className="text-gray-900">
-                <span className="font-bold text-lg">– Arch. Elena Rinaldi,</span> <span className="text-lg">Milano</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Google Reviews Section */}
+      <GoogleReviews />
 
       {/* Placeholder for CTA, it was there initially but I will re-add/keep if present or remove "Projects Preview" part that was before */}
 
