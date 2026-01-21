@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import CookieBanner from "@/components/CookieBanner";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const libreCaslon = Libre_Caslon_Display({
   weight: "400",
@@ -58,6 +59,7 @@ export default function RootLayout({
       <head>
         <GoogleAnalytics GA_MEASUREMENT_ID="G-XXXXXXXXXX" />
       </head>
+      <GoogleTagManager gtmId="GTM-XXXXXXX" />
       <body
         suppressHydrationWarning={true}
         className={`${libreCaslon.variable} ${nunito.variable} antialiased font-sans`}
