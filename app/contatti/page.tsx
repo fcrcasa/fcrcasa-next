@@ -102,6 +102,11 @@ export default function Contatti() {
                             I TUOI DATI DI CONTATTO
                         </h2>
 
+                        {/* Honeypot field for spam protection */}
+                        <div style={{ display: 'none' }}>
+                            <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" />
+                        </div>
+
                         <div className="mb-5">
                             <label htmlFor="nome" className="block mb-2 font-medium text-[#333] after:content-['_*'] after:text-[#d9534f]">
                                 Nome Completo

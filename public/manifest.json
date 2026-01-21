@@ -1,0 +1,16 @@
+{
+    "name": "FCR Casa | Impresa Edile Bergamo",
+    "short_name": "FCR Casa",
+    "description": "FCR Casa è un'impresa edile a Bergamo specializzata in nuove costruzioni e ristrutturazioni chiavi in mano.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "icons": [
+        {
+            "src": "/favicon.ico",
+            "sizes": "any",
+            "type": "image/x-icon"
+        }
+    ]
+}
