@@ -37,11 +37,10 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.ico" },
-      { url: "/images/logo.png", type: "image/png" },
+      { url: "/favicon.png", type: "image/png" },
     ],
-    shortcut: "/favicon.ico",
-    apple: "/images/logo.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
   },
   robots: {
     index: true,
