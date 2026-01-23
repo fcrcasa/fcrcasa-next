@@ -68,9 +68,6 @@ export default function GoogleReviews() {
                                 <Star key={i} size={28} className="fill-yellow-400 text-yellow-400" />
                             ))}
                         </div>
-                        <p className="text-sm font-medium text-gray-700 mb-6">
-                            In base a <span className="font-bold">35 recensioni</span>
-                        </p>
                         <div className="flex items-center gap-2">
                             <svg viewBox="0 0 24 24" className="w-24 h-8" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4" />
