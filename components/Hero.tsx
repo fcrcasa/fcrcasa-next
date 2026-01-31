@@ -13,6 +13,7 @@ export default function Hero() {
                     className="object-cover"
                     priority
                     quality={100}
+                    fetchPriority="high"
                 />
                 {/* Subtle gradient to ensure text readability if needed, but keeping it minimal as per screenshot request */}
                 <div className="absolute inset-0 bg-black/10" />

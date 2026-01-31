@@ -209,10 +209,10 @@ export default function Home() {
       <section className="flex flex-col md:flex-row">
         {/* Left Content */}
         <div className="w-full md:w-1/2 bg-[#8e8b82] px-8 py-24 md:p-24 flex flex-col items-center justify-center text-center">
-          <h2 className="font-serif text-3xl md:text-5xl text-[#1a1a1a] mb-8 leading-tight">
+          <h2 className="font-serif text-3xl md:text-5xl text-black mb-8 leading-tight">
             Ogni grande casa nasce da un’idea. Ogni idea, da una conversazione.
           </h2>
-          <p className="text-[#1a1a1a] text-lg mb-12 max-w-md opacity-80">
+          <p className="text-black text-lg mb-12 max-w-md opacity-90">
             Raccontaci il tuo progetto: siamo pronti ad ascoltarti e a costruirlo insieme.
           </p>
           <Link

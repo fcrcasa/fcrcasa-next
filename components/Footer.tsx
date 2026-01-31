@@ -22,7 +22,7 @@ export default function Footer() {
 
                     {/* Ufficio Section */}
                     <div className="w-full md:w-1/3 flex flex-col items-center">
-                        <h4 className="font-serif text-3xl mb-4 text-gray-100">Ufficio</h4>
+                        <h3 className="font-serif text-3xl mb-4 text-gray-100">Ufficio</h3>
                         <address className="not-italic text-lg text-gray-200 leading-relaxed font-light">
                             Via Fontanine 6 - <br />
                             Brignano Gera D'adda <br />
@@ -32,7 +32,7 @@ export default function Footer() {
 
                     {/* Contatti Section */}
                     <div className="w-full md:w-1/3 flex flex-col items-center">
-                        <h4 className="font-serif text-3xl mb-4 text-gray-100">Contatti</h4>
+                        <h3 className="font-serif text-3xl mb-4 text-gray-100">Contatti</h3>
                         <div className="flex flex-col gap-2 text-lg text-gray-200 font-light">
                             <a href="mailto:info@fcrcasa.it" className="underline hover:text-white transition-colors">
                                 info@fcrcasa.it
