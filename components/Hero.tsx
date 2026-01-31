@@ -12,7 +12,7 @@ export default function Hero() {
                     fill
                     className="object-cover"
                     priority
-                    quality={100}
+                    quality={80}
                     fetchPriority="high"
                 />
                 {/* Subtle gradient to ensure text readability if needed, but keeping it minimal as per screenshot request */}
