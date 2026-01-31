@@ -58,9 +58,22 @@ export default function Contatti() {
                 setShowAltroService(false);
 
                 // Google Ads Conversion Event
-                if (typeof window !== "undefined") {
-                    (window as any).gtag('event', 'conversion', { 'send_to': 'AW-17891410405/2AcsCN_fh-obEOWDpdNC' });
+                const gtag_report_conversion = (url?: string) => {
+                    const callback = () => {
+                        if (typeof (url) !== 'undefined') {
+                            window.location.href = url;
+                        }
+                    };
+                    if (typeof window !== "undefined" && (window as any).gtag) {
+                        (window as any).gtag('event', 'conversion', {
+                            'send_to': 'AW-17891410405/2AcsCN_fh-obEOWDpdNC',
+                            'event_callback': callback
+                        });
+                    }
+                    return false;
                 }
+
+                gtag_report_conversion();
             } else {
                 setFormStatus("error");
                 const data = await response.json().catch(() => ({}));
