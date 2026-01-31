@@ -3,9 +3,8 @@ import { Libre_Caslon_Display, Nunito } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import GoogleAnalytics from "@/components/GoogleAnalytics";
 import CookieBanner from "@/components/CookieBanner";
-import { GoogleTagManager } from "@next/third-parties/google";
+import Script from "next/script";
 
 const libreCaslon = Libre_Caslon_Display({
   weight: "400",
@@ -57,9 +56,21 @@ export default function RootLayout({
   return (
     <html lang="it">
       <head>
-        <GoogleAnalytics GA_MEASUREMENT_ID="G-XXXXXXXXXX" />
+        {/* Google Tag (gtag.js) */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17891410405"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17891410405');
+          `}
+        </Script>
       </head>
-      <GoogleTagManager gtmId="GTM-XXXXXXX" />
       <body
         suppressHydrationWarning={true}
         className={`${libreCaslon.variable} ${nunito.variable} antialiased font-sans`}
