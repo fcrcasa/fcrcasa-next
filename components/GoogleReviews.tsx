@@ -97,7 +97,7 @@ export default function GoogleReviews() {
                                                 {review.avatar}
                                             </div>
                                             <div>
-                                                <h4 className="text-sm font-bold text-gray-900 leading-tight">{review.name}</h4>
+                                                <h3 className="text-sm font-bold text-gray-900 leading-tight">{review.name}</h3>
                                                 <span className="text-xs text-blue-600 font-medium">Recensione Google</span>
                                             </div>
                                         </div>

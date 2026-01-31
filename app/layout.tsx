@@ -10,6 +10,7 @@ const libreCaslon = Libre_Caslon_Display({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-libre-caslon",
+  display: "swap",
 });
 
 const nunito = Nunito({

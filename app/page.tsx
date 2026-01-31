@@ -50,6 +50,8 @@ export default function Home() {
                   alt="Ristrutturazione totale a Treviglio"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  priority
+                  quality={70}
                 />
               </div>
               <span className="inline-block border-b border-gray-900 pb-1 text-2xl text-gray-900 group-hover:opacity-70 transition-opacity font-serif">
@@ -217,7 +219,7 @@ export default function Home() {
           </p>
           <Link
             href="/contatti"
-            className="inline-block border border-white text-white hover:bg-white hover:text-[#8e8b82] px-10 py-4 text-sm font-bold uppercase tracking-[0.2em] transition-all duration-300"
+            className="inline-block bg-white text-gray-900 border border-white hover:bg-gray-100 px-10 py-4 text-sm font-bold uppercase tracking-[0.2em] transition-all duration-300"
           >
             Contattaci
           </Link>
