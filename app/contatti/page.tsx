@@ -72,8 +72,16 @@ export default function Contatti() {
                     }
                     return false;
                 }
-
                 gtag_report_conversion();
+
+                // GTM DataLayer push — attiva conversione Lead High Ticket
+                if (typeof window !== "undefined") {
+                    (window as any).dataLayer = (window as any).dataLayer || [];
+                    (window as any).dataLayer.push({
+                        event: 'form_submission_leads',
+                        lead_type: 'high_ticket'
+                    });
+                }
             } else {
                 setFormStatus("error");
                 const data = await response.json().catch(() => ({}));

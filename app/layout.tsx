@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
 import Script from "next/script";
+import { GoogleTagManager } from '@next/third-parties/google';
 
 const libreCaslon = Libre_Caslon_Display({
   weight: "400",
@@ -90,6 +91,7 @@ export default function RootLayout({
         <Footer />
         <CookieBanner />
       </body>
+      <GoogleTagManager gtmId="GTM-KLMM99LD" />
     </html>
   );
 }
