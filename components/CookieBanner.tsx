@@ -10,6 +10,16 @@ export default function CookieBanner() {
         const consent = localStorage.getItem("cookie_consent");
         if (!consent) {
             setShowBanner(true);
+        } else {
+            // Riesegui l'update consent ad ogni caricamento pagina
+            if (typeof window !== "undefined" && (window as any).gtag) {
+                (window as any).gtag("consent", "update", {
+                    analytics_storage: consent,
+                    ad_storage: consent,
+                    ad_user_data: consent,
+                    ad_personalization: consent,
+                });
+            }
         }
     }, []);
 
@@ -17,7 +27,6 @@ export default function CookieBanner() {
         localStorage.setItem("cookie_consent", status);
         setShowBanner(false);
 
-        // Update GTag consent
         if (typeof window !== "undefined" && (window as any).gtag) {
             (window as any).gtag("consent", "update", {
                 analytics_storage: status,
