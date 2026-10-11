@@ -44,6 +44,19 @@ export default function Footer() {
                     </div>
 
                 </div>
+
+                {/* Legal & Policy Row */}
+                <div className="border-t border-gray-600/50 mt-16 pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-gray-400 gap-4 max-w-6xl mx-auto">
+                    <p>© {new Date().getFullYear()} F.C.R. Casa di Fontana Lorenzo — Impresa Edile Bergamo. Tutti i diritti riservati.</p>
+                    <div className="flex gap-6">
+                        <Link href="/privacy-policy" className="hover:text-white transition-colors underline">
+                            Privacy Policy
+                        </Link>
+                        <Link href="/cookie-policy" className="hover:text-white transition-colors underline">
+                            Cookie Policy
+                        </Link>
+                    </div>
+                </div>
             </div>
         </footer>
     );

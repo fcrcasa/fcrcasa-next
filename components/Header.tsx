@@ -66,6 +66,7 @@ export default function Header() {
         { href: "/", label: "Home" },
         { href: "/chi-siamo", label: "Chi siamo" },
         { href: "/i-nostri-lavori", label: "I nostri lavori" },
+        { href: "/blog", label: "Blog" },
         { href: "/contatti", label: "Contatti" }
     ];
 

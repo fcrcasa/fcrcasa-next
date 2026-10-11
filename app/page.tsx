@@ -1,8 +1,15 @@
+import type { Metadata } from "next";
 import Hero from "@/components/Hero";
 import { ArrowRight, Hammer, Home as HomeIcon, PenTool } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import GoogleReviews from "@/components/GoogleReviews";
+
+export const metadata: Metadata = {
+  title: "FCR Casa | Impresa Edile Bergamo — Costruzioni e Ristrutturazioni",
+  description:
+    "Impresa edile a Bergamo e provincia. Costruzioni su misura e ristrutturazioni chiavi in mano con oltre 10 anni di esperienza. Preventivo gratuito.",
+};
 
 export default function Home() {
   return (
@@ -34,7 +41,7 @@ export default function Home() {
       <section className="py-24 bg-[#F5F5F7]">
         <div className="container mx-auto px-6">
           <div className="mb-16 max-w-4xl">
-            <h2 className="font-serif text-5xl text-gray-900 mb-6">I nostri progetti</h2>
+            <h2 className="font-serif text-5xl text-gray-900 mb-6">I nostri progetti a Bergamo e provincia</h2>
             <p className="text-gray-600 text-lg leading-relaxed max-w-2xl">
               Scopri le nostre realizzazioni, dalle nuove costruzioni alle ristrutturazioni complete.
               Ogni progetto è un esempio del nostro impegno per la qualità e l'eccellenza.
@@ -143,10 +150,10 @@ export default function Home() {
           <div className="text-center mb-16 max-w-4xl mx-auto">
             <h2 className="font-serif text-5xl text-gray-900 mb-8">I nostri servizi</h2>
             <p className="text-gray-600 leading-relaxed text-lg">
-              Siamo specializzati nella costruzione di case su misura e nella ristrutturazione di abitazioni esistenti a Bergamo e provincia.
+              Siamo specializzati nella costruzione di case su misura e nella ristrutturazione di abitazioni esistenti a Bergamo, Treviglio, Trescore Balneario, Martinengo e in tutta la provincia.
               Il nostro team segue ogni progetto con attenzione, dal primo sopralluogo fino alla consegna chiavi in mano.
               Grazie all'esperienza pluriennale e alla collaborazione con professionisti qualificati, garantiamo interventi precisi, duraturi e in linea con le esigenze del cliente.
-              Offriamo consulenze gratuite e soluzioni personalizzate per ogni tipo di intervento edile.
+              Offriamo consulenze gratuite e soluzioni personalizzate per ogni tipo di intervento edile a Bergamo e provincia.
             </p>
           </div>
 

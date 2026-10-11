@@ -1,11 +1,16 @@
 import type { NextConfig } from "next";
+import createMDX from "@next/mdx";
+import remarkGfm from "remark-gfm";
+
+const withMDX = createMDX();
 
 const nextConfig: NextConfig = {
+  pageExtensions: ["ts", "tsx", "md", "mdx"],
   compiler: {
     removeConsole: process.env.NODE_ENV === "production",
   },
   images: {
-    formats: ['image/avif', 'image/webp'],
+    formats: ["image/avif", "image/webp"],
   },
   async headers() {
     return [
@@ -39,11 +44,11 @@ const nextConfig: NextConfig = {
           {
             key: "Cross-Origin-Resource-Policy",
             value: "cross-origin",
-          }
+          },
         ],
       },
     ];
   },
 };
 
-export default nextConfig;
+export default withMDX(nextConfig);

@@ -1,4 +1,5 @@
 
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
@@ -207,6 +208,47 @@ type Props = {
     params: Promise<{ slug: string }>;
 };
 
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    const { slug } = await params;
+    const project = projectsData[slug];
+
+    if (!project) return {};
+
+    const pageTitle = `${project.title} | FCR Casa Bergamo`;
+    const pageDesc = project.subtitle
+        ? `${project.subtitle} ${project.description[0]}`.slice(0, 160)
+        : project.description[0].slice(0, 160);
+    const heroImg = project.heroImages[0] || "/images/hero-Yyv9pgbkxJuewnQb.jpg";
+
+    return {
+        title: pageTitle,
+        description: pageDesc,
+        alternates: {
+            canonical: `/i-nostri-lavori/${slug}`,
+        },
+        openGraph: {
+            title: pageTitle,
+            description: pageDesc,
+            url: `https://fcrcasa.it/i-nostri-lavori/${slug}`,
+            type: "article",
+            images: [
+                {
+                    url: heroImg,
+                    width: 1200,
+                    height: 800,
+                    alt: project.title,
+                },
+            ],
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: pageTitle,
+            description: pageDesc,
+            images: [heroImg],
+        },
+    };
+}
+
 // Main component
 export default async function ProjectPage({ params }: Props) {
     const { slug } = await params;
@@ -296,7 +338,7 @@ export default async function ProjectPage({ params }: Props) {
                                     <div key={idx} className="relative rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow aspect-square">
                                         <Image
                                             src={img}
-                                            alt={`Gallery image ${idx + 1}`}
+                                            alt={`${project.title} - Dettaglio cantiere ${idx + 1}`}
                                             fill
                                             className="object-cover hover:scale-105 transition-transform duration-700"
                                         />

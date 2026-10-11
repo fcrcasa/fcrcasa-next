@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "I Nostri Lavori | FCR Casa — Portfolio Ristrutturazioni e Costruzioni Bergamo",
+  description:
+    "Portfolio FCR Casa: ristrutturazioni complete, nuove costruzioni e rifacimenti tetti a Treviglio, Trescore Balneario, Martinengo, Covo e Casirate d'Adda.",
+};
 
 const projects = [
     {
@@ -39,9 +46,9 @@ export default function NostriLavori() {
         <main className="pt-32 pb-20 min-h-screen bg-white">
             <div className="container mx-auto px-6">
                 <div className="mb-16 max-w-4xl">
-                    <h1 className="font-serif text-5xl text-gray-900 mb-6">I nostri lavori</h1>
+                    <h1 className="font-serif text-5xl text-gray-900 mb-6">I nostri lavori a Bergamo e provincia</h1>
                     <p className="text-gray-600 text-lg leading-relaxed max-w-3xl">
-                        Scopri le nostre realizzazioni, dalle nuove costruzioni alle ristrutturazioni complete.
+                        Scopri le nostre realizzazioni a Bergamo e provincia: ristrutturazioni complete di ville, nuove costruzioni, rifacimenti di tetti e lavori edili a Treviglio, Trescore Balneario, Martinengo, Covo e Casirate d'Adda.
                         Ogni progetto è un esempio del nostro impegno per la qualità e l'eccellenza.
                     </p>
                 </div>

@@ -1,11 +1,18 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Chi Siamo | FCR Casa — Impresa Edile a Bergamo dal 2015",
+  description:
+    "FCR Casa, impresa edile a Bergamo fondata nel 2015 da Lorenzo Fontana. Qualità, trasparenza e approccio sartoriale per ogni progetto edilizio in provincia.",
+};
 
 export default function ChiSiamo() {
     return (
         <main className="pt-32 pb-20 min-h-screen bg-[#F5F5F7] text-gray-900">
             <div className="container mx-auto px-6">
-                <h1 className="font-serif text-5xl text-center mb-16 text-gray-800">Chi siamo</h1>
+                <h1 className="font-serif text-5xl text-center mb-16 text-gray-800">Chi siamo — FCR Casa, impresa edile a Bergamo</h1>
 
                 <div className="flex flex-col lg:flex-row items-center gap-16 max-w-6xl mx-auto">
                     {/* Text Content */}
@@ -15,13 +22,13 @@ export default function ChiSiamo() {
                         </h2>
                         <div className="text-lg text-gray-700 leading-relaxed flex flex-col gap-4">
                             <p>
-                                Fondata da Lorenzo nel 2015, F.C.R. CASA trasforma sogni in progetti concreti.
+                                Fondata nel 2015 da Lorenzo Fontana, F.C.R. CASA è un'impresa edile a Bergamo che trasforma sogni in progetti edilizi concreti.
                             </p>
                             <p>
                                 Ci piace ascoltare: capire le tue esigenze, offrirti soluzioni curate e tempi certi.
                             </p>
                             <p>
-                                Che si tratti di una ristrutturazione completa o di una nuova costruzione,
+                                Che si tratti di una ristrutturazione completa a Bergamo e provincia o di una nuova costruzione,
                                 accompagniamo ogni passo con passione e trasparenza.
                             </p>
                             <p>
@@ -67,7 +74,7 @@ export default function ChiSiamo() {
                 <h3 className="text-sm font-bold tracking-[0.2em] text-gray-500 uppercase mb-4">IL FONDATORE</h3>
                 <h2 className="font-serif text-5xl md:text-6xl text-gray-800 mb-8">Lorenzo Fontana</h2>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                    Lorenzo Fontana è il cuore e la mente dietro Fontana Costruzioni. Cresciuto in una famiglia di artigiani edili, ha trasformato la tradizione in visione, fondando un’impresa che oggi è sinonimo di eccellenza e progettualità. Con oltre dieci anni di esperienza, Lorenzo guida ogni progetto con un approccio sartoriale: ascolto profondo, attenzione al dettaglio e un’idea chiara di bellezza funzionale. Il suo obiettivo? Creare spazi che durino nel tempo e parlino il linguaggio di chi li abita.
+                    Lorenzo Fontana è il cuore e la mente dietro FCR Casa. Cresciuto in una famiglia di artigiani edili, ha trasformato la tradizione in visione, fondando un’impresa edile a Bergamo che oggi è sinonimo di eccellenza e progettualità. Con oltre dieci anni di esperienza nel settore delle costruzioni e ristrutturazioni in provincia di Bergamo, Lorenzo guida ogni progetto con un approccio sartoriale: ascolto profondo, attenzione al dettaglio e un’idea chiara di bellezza funzionale. Il suo obiettivo? Creare spazi che durino nel tempo e parlino il linguaggio di chi li abita.
                 </p>
             </div>
 
