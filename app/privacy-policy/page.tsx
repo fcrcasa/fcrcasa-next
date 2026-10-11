@@ -15,7 +15,7 @@ export default function PrivacyPolicy() {
                 <div className="prose prose-lg max-w-none text-gray-800 space-y-8">
                     <section>
                         <h2 className="text-2xl font-bold mb-4">1. Introduzione</h2>
-                        <p>Benvenuto su FCR Casa. La tua privacy è estremamente importante per noi. Questa informativa spiega come raccogliamo, utilizziamo e proteggiamo i tuoi dati personali quando visiti il nostro sito o utilizzi i nostri servizi.</p>
+                        <p>Benvenuto su FCR Casa (F.C.R. Casa di Fontana Lorenzo, P.IVA 04932980164, con sede in Via Fontanine 6, 24053 Brignano Gera d'Adda BG). La tua privacy è estremamente importante per noi. Questa informativa spiega come raccogliamo, utilizziamo e proteggiamo i tuoi dati personali quando visiti il nostro sito o utilizzi i nostri servizi.</p>
                     </section>
 
                     <section>

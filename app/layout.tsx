@@ -113,6 +113,8 @@ export default function RootLayout({
               "url": "https://fcrcasa.it",
               "telephone": "+39 348 724 2180",
               "email": "info@fcrcasa.it",
+              "vatID": "IT04932980164",
+              "taxID": "04932980164",
               "image": "https://fcrcasa.it/images/hero-Yyv9pgbkxJuewnQb.jpg",
               "logo": "https://fcrcasa.it/favicon.png",
               "address": {
